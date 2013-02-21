@@ -1,0 +1,82 @@
+########################################################################
+# module     : CMPE12 Winter 2012
+# author     : Joseph Rowley
+# Partner    : Eric Cao^M
+# Other Group: Tyler Smith and Rutherford Le^M
+# assignment : 8
+# file       : Assignment Readme
+# date       : 03/14/2012^M
+########################################################################
+
+==[ Summary ]===========================================================
+
+This program demonstrates the diffie hellmen key exchange system on the 
+HC11. It uses Twitter to publically display all communications! Then you
+can encrypt a message and have the HC11 decrpt it! 
+
+==[ Files ]=============================================================
+
+README         			This file.
+Lab8_report.pdf			The procedure and findings of this 
+				assignment.
+lab8.asm			The assembly source code file.
+alice.py			The Python script used by the computer 
+				that is connected to the HC11.
+pythpete.py			The Python script that runs on the
+				other computer.
+
+==How to Compile & Run ]================================================
+First you must install all the dependencies needed for Python Twitter 
+wrapper and for Python based serial communication. For Twitter you must
+install simplejson, httplib2, python-oauth2. Setuptools is not required
+however I recommend it. Then install the pyserial module. You can 
+install all these modules from standard source by running their 
+"setup.py" file with the commands "build" and then "install". You must
+also sign up for a Twitter Dev account get 4 different tokens from 
+Twitter to activate the python script. Modify the Alice and pypete
+scripts accordingly or use our credentials if you like. 
+
+Run the HC11 complier and point it towards the lab8.asm file. Then open 
+up tera term and establish a connection with HC11. Type D and drag the 
+binary file (.s19). Next press the "E" key to execute the program. After
+uploading the code successfully connect the HC11 to the computer
+running the "alice.py" script. Next start the py script on this computer
+and start the pypete.py script on the other computer. After this you 
+should be able to start the program by pushing the interupt button
+on the HC11.
+
+
+==[ Caveats & Additional Information ]==================================
+
+The Twitter API will say that it failed to install because it is missing
+some .json files but this isn't true. You should be fine without them.
+
+==[ Quick Start Guide ]=================================================
+
+
+Detail what your game is; is it a new twist on an old game? Or a 
+completely new game? Be creative!
+
+	The Diffie Hellmen key exchange is from was first publicly 
+invented in 1976, so it is not new by anymeans. That being said I
+believe this is first instance of the HC11 being used to implement the
+Diffie Hellmen encryption scheme over Twitter.
+
+How to Play? What are the controls? How do I play? What do I need to
+press?
+	Using the program is pretty simple and requires you press the 
+interrupt button to generate a prime number. Then you enter a secret
+key with the switches on the HC11 and press the interupt button to 
+set it as a correct value. On the other side you input your values on
+the python script via the keyboard. The rest of the program we will 
+let you discover.
+
+How do I win? What are the conditions? Do I have to get a certain 
+number of things right? Do I need to beat a timer? Let me know!
+	If you understand what we have done then you have won.
+
+Secrets - Are there any hidden things in your game? Different game
+modes, backdoors, etc?
+	This project is full of secrets, but you get to come up with 
+them. That's the best part!
+
